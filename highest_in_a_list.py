@@ -1,5 +1,6 @@
 student_scores = input("Input a list of student scores, separate with a 'space': \n").split()
 for n in range(0, len(student_scores)):
+    #  Convert elements in the list from str to int
     student_scores[n] = int(student_scores[n])
 
 sorted_scores = sorted(student_scores)
