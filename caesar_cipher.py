@@ -21,9 +21,9 @@ def encrypt(plain_text, shift_amount):
     print(f"The encrypted text is '{encrypted_text}'.")
 
 
-def decrypt(plain_text, shift_amount):
+def decrypt(cipher_text, shift_amount):
     decrypted_text = ""
-    for i in plain_text:
+    for i in cipher_text:
         if i == " ":
             decrypted_text += " "
         elif i == ".":
@@ -39,4 +39,4 @@ def decrypt(plain_text, shift_amount):
 if direction == "encode":
     encrypt(plain_text = text, shift_amount = shift)
 elif direction == "decode":
-    decrypt(plain_text = text, shift_amount = shift)
+    decrypt(cipher_text = text, shift_amount = shift)
